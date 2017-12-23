@@ -2,3 +2,9 @@ p {
 	text-align: justify;
 	text-indent: 50px;
 }
+
+body {
+	background-image: url("fundo.jpg");
+	background-color: rgb(35, 138, 195);
+	color: red;
+}
