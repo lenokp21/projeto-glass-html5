@@ -298,9 +298,13 @@ aside#lateral h2{
 }
 
 footer#rodape{
+
 	clear: both;
 	
 	border-top:  1px solid #606060;
+	
+	bottom: 0;
+
 }
 
 footer#rodape p {
