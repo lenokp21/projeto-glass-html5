@@ -4,11 +4,14 @@
 <meta charset="utf-8">
 <title>Tudo sobre Google Glass</title>
 
+
 <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/lenokp21/projeto-glass-html5/gh-pages/_css/estilo45457878.css">
-<script type="text/javascript" src="https://cdn.rawgit.com/lenokp21/projeto-glass-html5/gh-pages/_javascript/funcoes.js"></script> 
+<link rel="stylesheet" type="text/css" href="https://rawgit.com/lenokp21/projeto-glass-html5/master/_css/specs.css">
+<script type="text/javascript" src="https://cdn.rawgit.com/lenokp21/projeto-glass-html5/gh-pages/_javascript/funcoes.js"></script>
 
 <!-- 
-<link rel="stylesheet" type="text/css" href="_css/estilo.css"> 
+<link rel="stylesheet" type="text/css" href="_css/estilo.css">
+<link rel="stylesheet" type="text/css" href="_css/specs.css">
 <script type="text/javascript" src="_javascript/funcoes.js"></script>  
  -->
 
@@ -55,8 +58,14 @@
 			<p>Clique em qualquer Área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
 
 			<section id="conteudo">
-				<img src="https://raw.githubusercontent.com/lenokp21/projeto-glass-html5/gh-pages/_imagens/glass-esquema-marcado.jpg">
-				<iframe src="https://lenokp21.github.io/projeto-glass-html5/google-glass.html"></iframe>
+				<img src="https://raw.githubusercontent.com/lenokp21/projeto-glass-html5/gh-pages/_imagens/glass-esquema-marcado.jpg" usemap="#meumapa">
+				<map name="meumapa">
+					<area shape="poly" coords="182,218,266,207,267,245,184,256" href="https://lenokp21.github.io/projeto-glass-html5/google-glass.html#tela" target="janela">
+					<area shape="circle" coords="157,244,12" href="https://lenokp21.github.io/projeto-glass-html5/google-glass.html#camera" target="janela">
+					<area shape="circle" coords="76,51,12" href="https://lenokp21.github.io/projeto-glass-html5/google-glass.html#gadgets" target="janela">
+					<area shape="poly" coords="27,145,83,215,83,249,25,166" href="https://lenokp21.github.io/projeto-glass-html5/google-glass.html#sensores" target="janela">
+				</map>
+				<iframe src="https://lenokp21.github.io/projeto-glass-html5/google-glass.html" name="janela" id="frame-spec" scrolling="no" ></iframe>
 			</section>
 			
 		</section>
