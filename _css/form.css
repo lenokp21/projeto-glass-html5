@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+form {
+    width: 500px;
+    margin: auto;
+}
+
+input, select, textarea {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 13pt;
+
+    background-color: rgba(255,255,255,.7);
+}
+
+input:hover, select:hover, textarea:hover {
+    background-color: #dddddd;
+}
+
+legend {
+    color: #888888;
+    font-weight: bold;
+    font-size: 13pt;
+    font-family: sans-serif;
+}
+
+fieldset {
+    border-color: #cecece;
+    margin: 20px;
+}
+
+fieldset#sexo {
+    width: 100px;
+}
+
+fieldset#usuario {
+    background: url("https://raw.githubusercontent.com/lenokp21/projeto-glass-html5/master/_imagens/icone-contato.png") no-repeat 95% 95%;
+}
+
+fieldset#endereco {
+    background: url("https://raw.githubusercontent.com/lenokp21/projeto-glass-html5/master/_imagens/icone-endereco.png") no-repeat 95% 95%;
+}
+
+fieldset#mensagem {
+    background: url("https://raw.githubusercontent.com/lenokp21/projeto-glass-html5/master/_imagens/icone-mensagem.png") no-repeat 95% 95%;
+}
+
+fieldset#pedido {
+    background: url("https://raw.githubusercontent.com/lenokp21/projeto-glass-html5/master/_imagens/icone-pagamento.png") no-repeat 95% 95%;
+}

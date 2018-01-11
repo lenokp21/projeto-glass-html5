@@ -6,18 +6,18 @@
 
 
 <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/lenokp21/projeto-glass-html5/gh-pages/_css/estilo45457878.css">
-<script type="text/javascript" src="https://cdn.rawgit.com/lenokp21/projeto-glass-html5/gh-pages/_javascript/funcoes.js"></script> 
+	<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/lenokp21/projeto-glass-html5/master/_css/form.css">
 
-<!-- 
-<link rel="stylesheet" type="text/css" href="_css/estilo.css"> 
-<script type="text/javascript" src="_javascript/funcoes.js"></script>  
- -->
-	
+<!--
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css">
+    <script type="text/javascript" src="_javascript/funcoes.js"></script>
+-->
+
 <script type="text/javascript">
 	function calc_total() {
-		var qtd = parseInt(document.getElementsById('cQtd').value);
+		var qtd = parseInt(document.getElementById('cQtd').value);
 		tot = qtd * 1500;
-		document.getElementsById('cTot').value = tot;
+		document.getElementById('cTot').value = tot;
     }
 </script>
 
@@ -59,14 +59,15 @@
 					</hgroup>
 				</header>
 			</article>
-<form method="post" id="fContato" action="mailto:lenokp21@gmail.com" oninput="calc_total();">
+
+<form method="post" id="fContato" action="mailto:lenokp21@gmail.com" oninput="calc_total()">
 
 <fieldset id="usuario">
 <legend>Identificação do Usuário</legend>
 	<p><label for="cNome"> Nome: </label><input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"></p>
 	<p><label for="cSenha">Senha:</label> <input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 dígitos"></p>
 	<p><label for="cMail">E-mail:</label> <input type="email" name="tMail" id="cMail" size="20" maxlength="40"></p>
-    <fieldset><legend>Sexo:</legend>
+    <fieldset id="sexo"><legend>Sexo:</legend>
 		<input type="radio" name="tSexo" id="cMasc" checked/><label for="cMasc">Masculino</label>
 		<br/>
         <input type="radio" name="tSexo" id="cFen"/><label for="cFen">Feminino</label>
@@ -76,16 +77,17 @@
 
 <fieldset id="endereco">
 	<legend>Endereço do Usuário</legend>
-    <p><label for="cRua">Logradouro:</label><input type="text" name="tRua" id="cRua" size="30" maxlength="89" placeholder="Rua, Av, Trac, ..."></p>
+    <p><label for="cRua">Logradouro:</label><input type="text" name="tRua" id="cRua" size="20" maxlength="89" placeholder="Rua, Av, Trac, ..."></p>
 	<p><label for="cNum">Número:</label><input type="number" name="tNum" id="cNum" min="0" max="99999"></p>
 	<p><label for="cEst">Estado:</label>
 	<select name="tEst" id="cEst">
-		<optgroup label="Cidades"><option>Rio de Janeiro</option>
-		<option selected>Distrito Federal</option>
-		<option>Bahia</option></optgroup>
+		<optgroup label="Cidades">
+			<option>Rio de Janeiro</option>
+			<option selected>Distrito Federal</option>
+			<option>Bahia</option></optgroup>
 	</select></p>
 	<p><label for="">Cidade:</label>
-		<input type="text" name="tCid" id="cCid" maxlength="40" size="20" placeholder="Sua Cidade" list="cidades">
+		<input type="text" name="tCid" id="cCid" maxlength="40" size="20" placeholder="Sua Cidade" list="cidades"/>
 	<datalist id="cidades">
 		<option value="Rio de Janeiro"></option>
 		<option value="Nova Iguaçu"></option>
@@ -103,7 +105,7 @@
 		Max
 	</p>
 	<p><label for="cMsg">Mensagem:</label>
-		<textarea name="tMsq" id="cMsg" cols="45" rows="5" placeholder="Deixe aqui sua Mensagem.">
+		<textarea name="tMsq" id="cMsg" cols="35" rows="5" placeholder="Deixe aqui sua Mensagem.">
 		</textarea>
 	</p>
 </fieldset>
@@ -119,7 +121,7 @@
 		<input type="number" name="tQtd" id="cQtd" min="0" max="5">
 	</p>
 	<p><label for="cTot">Preço Total: R$</label>
-		<input type="text" name="tTot" id="cTot" placeholder="Total a pagar" readonly>
+		<input type="text" name="tTot" id="cTot" placeholder="Total a pagar" value="0" readonly>
 	</p>
 </fieldset>
 
